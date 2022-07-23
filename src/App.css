@@ -13,26 +13,147 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-image: radial-gradient(circle at center, #F4DD90, #0C1C5F) !important;
+  height: 100vh;
+}
+
+.wallet-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjOvSperRYjHH9-EHlKZJBfwvXy4rJpyerzHQsnp8DuuycYU5_);
+  width: 320px;
+  color: #fff;
+  font-size: 15px;
+  padding: 20px 20px 0;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  box-shadow: 0 0 10px #fff;
+}
+
+.page-title {
+  text-align: left;
+}
+
+.fa-user {
+  float: right;
+}
+
+.fa-align-left {
+  margin-right: 15px;
+}
+
+.amount-box img {
+  width: 50px;
+}
+
+.amount {
+  font-size: 35px;
+}
+
+.amount-box p {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.btn-group {
+  margin: 20px 0;
+}
+
+.btn-group .btn {
+  margin: 8px;
+  border-radius: 20px !important;
+  font-size: 12px;
+}
+
+.txn-history {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+
+.txn-list {
+  background-color: #fff;
+  padding: 12px 10px;
+  color: #777;
+  font-size: 14px;
+  margin: 7px 0;
+}
+
+.debit-amount {
+  color: red;
+  float: right;
+}
+
+.credit-amount {
+  color: green;
+  float: right;
+
+}
+
+.footer-menu {
+  margin: 20px -20px 0;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  padding: 10px 10px 0;
+}
+
+.footer-menu p {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .wallet-container {
+    height: 115%;
+    bottom: 20px;
+    margin-top: 100px;
+  }
+
+}
+
+.contenttrue {
+  color: green;
+  font-size: 20px;
+}
+
+.contentfalse {
+  color: red;
+  font-size: 20px;
+}
+
+.item-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.cash {
+  color: yellow;
+  padding-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.dodgerblue {
+  color: dodgerblue;
+  font-size: 20px;
+}
+
+.red {
+  color: red;
+  font-size: 20px;
+}
+
+.history-title {
+  background-color: darkturquoise;
+  box-shadow: 0 0 10px #ccc;
+}
+
+
+#money,
+#note,
+#expense,
+#date {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 10px 0;
 }
