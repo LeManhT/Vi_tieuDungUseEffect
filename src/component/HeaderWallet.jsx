@@ -9,7 +9,7 @@ function HeaderWallet(props) {
     useEffect(() => {
         let sum = 0;
         for (let i = 0; i < props.expense.length; i++) {
-            sum = sum + props.expense[i].money * (props.expense[i].expense ? -1 : 1)
+            sum = sum + props.expense[i].money * (props.expense[i].expense == true ? -1 : 1)
         }
         setTotal(sum)
     }, [props.expense])

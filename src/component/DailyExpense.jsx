@@ -5,9 +5,9 @@ function DailyExpense(props) {
         <div>
             {props.daily.map(function (value, index) {
                 return (
-                    < div key={index} className={`item-content ${value.expense ? 'red' : 'dodgerblue'}`} >
+                    < div key={index} className={`item-content ${(value.expense) == true ? 'red' : 'dodgerblue'}`} >
                         <div>{value.note}</div>
-                        <div>{value.expense ? '-' + value.money.toLocaleString() : '+' + value.money.toLocaleString()}</div>
+                        <div>{(value.expense == true) ? '-' + value.money.toLocaleString() : '+' + value.money.toLocaleString()}</div>
                     </div>
                 )
             })}

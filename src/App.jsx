@@ -4,6 +4,8 @@ import HeaderWallet from './component/HeaderWallet';
 import ListExpense from './component/ListExpense';
 import { useState } from 'react';
 import ModalExpense from './component/ModalExpense';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import SignIn from './component/SignIn';
 
 function App() {
 
@@ -15,11 +17,12 @@ function App() {
 
 
   function addData() {
-    let money = document.querySelector('#money').value;
+    let money = document.querySelector('#money').value * 1;
     let note = document.querySelector('#note').value;
-    let expenseData = document.querySelector('#expense').value;
+    let expenseData = JSON.parse(document.querySelector('#expense').value
+    )
     let date = document.querySelector('#date').value;
-    setExpense([...expense, { money, note, expense: expenseData, date }]);
+    setExpense([...expense, { money: money, expense: expenseData, note: note, date: date }]);
     document.querySelector('.closeModal').click();
   }
 
@@ -82,6 +85,7 @@ function App() {
           </div>
         </div>
       </div>
+
 
 
 
